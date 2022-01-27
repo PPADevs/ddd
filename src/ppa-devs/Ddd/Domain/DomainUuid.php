@@ -1,5 +1,5 @@
 <?php
-namespace Dadeky\Ddd\Domain;
+namespace ppa-devs\Ddd\Domain;
 
 use Ramsey\Uuid\Uuid;
 

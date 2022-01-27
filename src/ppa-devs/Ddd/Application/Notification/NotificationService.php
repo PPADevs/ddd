@@ -1,5 +1,5 @@
 <?php
-namespace Dadeky\Ddd\Application\Notification;
+namespace ppa-devs\Ddd\Application\Notification;
 
 use Ddd\Application\Notification\MessageProducer;
 use Ddd\Application\Notification\PublishedMessageTracker;

@@ -1,12 +1,12 @@
 {
-	"name" : "PPADevs/ddd",
+	"name" : "ppa-devs/ddd",
 	"description" : "Library for Domain Driven Design.",
 	"authors" : [{
-			"name" : "PPADevs",
+			"name" : "ppa-devs",
 			"role" : "Developer"
 		}
 	],
-	"homepage" : "https://github.com/dadeky/ddd",
+	"homepage" : "https://github.com/ppa-devs/ddd",
 	"license" : "BSD-2-Clause",
 	"keywords" : [
 		"file"
@@ -23,12 +23,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Dadeky\\" : "src/Dadeky"
-		}
-	},
-	"autoload-dev" : {
-		"psr-4" : {
-			"Dadeky\\Tests\\" : "tests/Dadeky/Tests"
+			"ppa-devs\\" : "src/ppa-devs"
 		}
 	}
 }

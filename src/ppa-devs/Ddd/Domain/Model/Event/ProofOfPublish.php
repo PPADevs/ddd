@@ -1,7 +1,7 @@
 <?php
-namespace Dadeky\Ddd\Domain\Model\Event;
+namespace ppa-devs\Ddd\Domain\Model\Event;
 
-use Dadeky\Ddd\Domain\IdentifiableValueObject;
+use ppa-devs\Ddd\Domain\IdentifiableValueObject;
 
 class ProofOfPublish extends IdentifiableValueObject
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Dadeky\Ddd\Domain\Model\Event;
+namespace ppa-devs\Ddd\Domain\Model\Event;
 
 use Ddd\Domain\DomainEvent;
 use Doctrine\Common\Collections\ArrayCollection;

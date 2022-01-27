@@ -1,5 +1,5 @@
 <?php
-namespace Dadeky\Ddd\Infrastructure\Application\Service;
+namespace ppa-devs\Ddd\Infrastructure\Application\Service;
 
 use Ddd\Application\Service\TransactionalSession;
 use Doctrine\ORM\EntityManager;
