@@ -1,11 +1,11 @@
 <?php
-namespace ppa-devs\Ddd\Infrastructure\Application\Notification;
+namespace ppadevs\Ddd\Infrastructure\Application\Notification;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query\Expr;
 use Ddd\Application\EventStore;
 use JMS\Serializer\SerializerBuilder;
-use ppa-devs\Ddd\Domain\Model\Event\ProvedStoredEvent;
+use ppadevs\Ddd\Domain\Model\Event\ProvedStoredEvent;
 
 class DoctrineProvedEventStore extends EntityRepository implements EventStore
 {
@@ -49,7 +49,7 @@ class DoctrineProvedEventStore extends EntityRepository implements EventStore
         
         $qb = $this->getEntityManager()->createQueryBuilder();
         $qb->select('event')
-            ->from('ppa-devs\Ddd\Domain\Model\Event\ProvedStoredEvent', 'event')
+            ->from('ppadevs\Ddd\Domain\Model\Event\ProvedStoredEvent', 'event')
             ->leftJoin('event.proofsOfPublish', 'pop', Expr\Join::WITH, $qb->expr()->andX( $qb->expr()->eq('pop.exchangeName', ':exchangeName') ))
             ->where($qb->expr()->isNull('pop.publishedOn'))
             ->orderBy('event.eventId', 'ASC')

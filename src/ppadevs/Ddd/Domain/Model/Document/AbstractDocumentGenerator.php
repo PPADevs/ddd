@@ -1,5 +1,5 @@
 <?php
-namespace ppa-devs\Ddd\Domain\Model\Document;
+namespace ppadevs\Ddd\Domain\Model\Document;
 
 abstract class AbstractDocumentGenerator
 {

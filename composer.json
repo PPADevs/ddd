@@ -1,12 +1,12 @@
 {
-	"name" : "ppa-devs/ddd",
+	"name" : "ppadevs/ddd",
 	"description" : "Library for Domain Driven Design.",
 	"authors" : [{
-			"name" : "ppa-devs",
+			"name" : "ppadevs",
 			"role" : "Developer"
 		}
 	],
-	"homepage" : "https://github.com/ppa-devs/ddd",
+	"homepage" : "https://github.com/ppadevs/ddd",
 	"license" : "BSD-2-Clause",
 	"keywords" : [
 		"file"
@@ -23,7 +23,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"ppa-devs\\" : "src/ppa-devs"
+			"ppadevs\\" : "src/ppadevs"
 		}
 	}
 }

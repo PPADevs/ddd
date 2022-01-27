@@ -1,5 +1,5 @@
 <?php
-namespace ppa-devs\Ddd\Domain;
+namespace ppadevs\Ddd\Domain;
 
 abstract class IdentifiableValueObject extends IdentifiableDomainObject {
 	

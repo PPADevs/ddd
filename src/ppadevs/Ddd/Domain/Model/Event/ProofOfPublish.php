@@ -1,7 +1,7 @@
 <?php
-namespace ppa-devs\Ddd\Domain\Model\Event;
+namespace ppadevs\Ddd\Domain\Model\Event;
 
-use ppa-devs\Ddd\Domain\IdentifiableValueObject;
+use ppadevs\Ddd\Domain\IdentifiableValueObject;
 
 class ProofOfPublish extends IdentifiableValueObject
 {

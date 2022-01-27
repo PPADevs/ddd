@@ -1,5 +1,5 @@
 <?php
-namespace ppa-devs\Ddd\Application\Notification;
+namespace ppadevs\Ddd\Application\Notification;
 
 use Ddd\Application\EventStore;
 use Ddd\Application\Notification\MessageProducer;

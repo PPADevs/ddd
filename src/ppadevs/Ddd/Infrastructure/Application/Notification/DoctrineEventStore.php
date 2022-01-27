@@ -1,5 +1,5 @@
 <?php
-namespace ppa-devs\Ddd\Infrastructure\Application\Notification;
+namespace ppadevs\Ddd\Infrastructure\Application\Notification;
 
 use Ddd\Domain\Event\StoredEvent;
 use Ddd\Infrastructure\Application\Notification\DoctrineEventStore as BaseEventStore;
