@@ -1,9 +1,8 @@
 {
-	"name" : "dadeky/ddd",
+	"name" : "PPADevs/ddd",
 	"description" : "Library for Domain Driven Design.",
 	"authors" : [{
-			"name" : "Darko Dvorski",
-			"email" : "dadeky@gmail.com",
+			"name" : "PPADevs",
 			"role" : "Developer"
 		}
 	],
@@ -16,9 +15,9 @@
 		"sort-packages" : true
 	},
 	"require" : {
-		"php" : ">=5.5",
+		"php" : ">=7.4",
 		"carlosbuenosvinos/ddd" : "^1.5",
-		"doctrine/orm" : "^2.5",
+		"doctrine/orm" : "^2.11",
 		"php-amqplib/php-amqplib" : "^2.6",
 		"ramsey/uuid" : "^3 || ^4"
 	},
