@@ -3,7 +3,7 @@ namespace ppadevs\Ddd\Infrastructure\Application\Notification;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query\Expr;
-use Ddd\Application\EventStore;
+use ppadevs\Ddd\Application\EventStore;
 use JMS\Serializer\SerializerBuilder;
 use ppadevs\Ddd\Domain\Model\Event\ProvedStoredEvent;
 

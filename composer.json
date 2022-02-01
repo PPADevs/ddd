@@ -16,7 +16,6 @@
 	},
 	"require" : {
 		"php" : ">=7.4",
-		"carlosbuenosvinos/ddd" : "^1.5",
 		"doctrine/orm" : "^2.11",
 		"ramsey/uuid" : ">=3"
 	},

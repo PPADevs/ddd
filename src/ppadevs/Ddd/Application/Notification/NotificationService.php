@@ -1,9 +1,9 @@
 <?php
 namespace ppadevs\Ddd\Application\Notification;
 
-use Ddd\Application\Notification\MessageProducer;
-use Ddd\Application\Notification\PublishedMessageTracker;
-use Ddd\Domain\Event\StoredEvent;
+use ppadevs\Ddd\Application\Notification\MessageProducer;
+use ppadevs\Ddd\Application\Notification\PublishedMessageTracker;
+use ppadevs\Ddd\Domain\Event\StoredEvent;
 use JMS\Serializer\SerializerBuilder;
 
 class NotificationService

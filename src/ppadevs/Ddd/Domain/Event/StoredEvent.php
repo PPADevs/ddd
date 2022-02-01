@@ -1,34 +1,31 @@
 <?php
-namespace ppadevs\Ddd\Domain\Model\Event;
+
+namespace ppadevs\Ddd\Domain\Event;
 
 use ppadevs\Ddd\Domain\DomainEvent;
-use Doctrine\Common\Collections\ArrayCollection;
 
-class ProvedStoredEvent implements DomainEvent
+class StoredEvent implements DomainEvent
 {
     /**
      * @var int
      */
     private $eventId;
-    
+
     /**
      * @var string
      */
     private $eventBody;
-    
+
     /**
      * @var \DateTime
      */
     private $occurredOn;
-    
+
     /**
      * @var string
      */
     private $typeName;
-    
-    /** @var ProofOfPublish[] */
-    private $proofsOfPublish;
-    
+
     /**
      * @param string $aTypeName
      * @param \DateTime $anOccurredOn
@@ -39,33 +36,8 @@ class ProvedStoredEvent implements DomainEvent
         $this->eventBody = $anEventBody;
         $this->typeName = $aTypeName;
         $this->occurredOn = $anOccurredOn;
-        $this->proofsOfPublish = new ArrayCollection();
     }
-    
-    public function addProofOfPublish($exchangeName)
-    {
-        if (!$this->isPublished($exchangeName))
-            $this->proofsOfPublish[] = new ProofOfPublish($this, $exchangeName);
-    }
-    
-    public function isPublished($exchangeName)
-    {
-        $proofsOfPublish = $this->getProofsOfPublish();
-        foreach ($proofsOfPublish as $proofOfPublish){
-            if ($proofOfPublish->getExchangeName() == $exchangeName)
-                return true;
-        }
-        return false;
-    }
-    
-    /**
-     * @return ProofOfPublish[]
-     */
-    public function getProofsOfPublish()
-    {
-        return $this->proofsOfPublish;
-    }
-    
+
     /**
      * @return string
      */
@@ -73,7 +45,7 @@ class ProvedStoredEvent implements DomainEvent
     {
         return $this->eventBody;
     }
-    
+
     /**
      * @return int
      */
@@ -81,7 +53,7 @@ class ProvedStoredEvent implements DomainEvent
     {
         return $this->eventId;
     }
-    
+
     /**
      * @return string
      */
@@ -89,7 +61,7 @@ class ProvedStoredEvent implements DomainEvent
     {
         return $this->typeName;
     }
-    
+
     /**
      * @return \DateTime
      */
@@ -97,6 +69,4 @@ class ProvedStoredEvent implements DomainEvent
     {
         return $this->occurredOn;
     }
-    
 }
-

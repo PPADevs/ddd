@@ -1,10 +1,10 @@
 <?php
 namespace ppadevs\Ddd\Application\Notification;
 
-use Ddd\Application\EventStore;
-use Ddd\Application\Notification\MessageProducer;
+use ppadevs\Ddd\Application\EventStore;
+use ppadevs\Ddd\Application\Notification\MessageProducer;
 use JMS\Serializer\SerializerBuilder;
-use Ddd\Domain\DomainEvent;
+use ppadevs\Ddd\Domain\DomainEvent;
 
 class ProvedNotificationService
 {
