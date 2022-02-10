@@ -11,7 +11,6 @@ interface MessageProducer
      * @param string $notificationType
      * @param int $notificationId
      * @param \DateTime $notificationOccurredOn
-     * @return
      */
     public function send($exchangeName, $notificationMessage, $notificationType, $notificationId, \DateTime $notificationOccurredOn);
 

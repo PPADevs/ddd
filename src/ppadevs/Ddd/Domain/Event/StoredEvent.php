@@ -62,9 +62,6 @@ class StoredEvent implements DomainEvent
         return $this->typeName;
     }
 
-    /**
-     * @return \DateTime
-     */
     public function occurredOn()
     {
         return $this->occurredOn;

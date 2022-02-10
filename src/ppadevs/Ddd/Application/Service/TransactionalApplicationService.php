@@ -28,10 +28,6 @@ class TransactionalApplicationService implements ApplicationService
         $this->service = $service;
     }
 
-    /**
-     * @param $request
-     * @return mixed
-     */
     public function execute($request = null)
     {
         if (empty($this->service)) {
